@@ -14,10 +14,6 @@ function toggleMenu(e) {
     }
 }
 
-function switchPage(e) {
-    
-}
-
 function createMenu(e) {
     const menu = document.getElementById('menu-bar');
     const hArray = ['Vitamins', 'Acids'];
@@ -36,7 +32,7 @@ function createMenu(e) {
             subItem.addEventListener('click', e => {
                 const indicator = document.getElementById('menu-indicator');
                 indicator.style.opacity = '0.5';
-                indicator.style.top = e.target.offsetTop - 2 + 'px';
+                indicator.style.top = e.target.offsetTop + 5 + 'px';
                 setTimeout(() => {
                     indicator.style.opacity = '1';
                 }, 100);
