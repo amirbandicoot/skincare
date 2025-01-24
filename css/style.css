@@ -4,20 +4,29 @@
     src: url(JosefinSlab.ttf);
 }
 
+@font-face {
+    font-family: JosefinSlab-Italic;
+    src: url(JosefinSlab-Italic.ttf);
+}
+
+@font-face {
+    font-family: JosefinSans-Medium;
+    src: url(JosefinSans-Medium.ttf);
+}
+
 * {
-    font-family: JosefinSlab;
-    font-weight: bold;
+    
 }
 
 body {
-    background-color: #1a1a1a;
+    background-color: #191919;
     text-align: center;
-    padding: 60px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
     margin: 0px;
 }
 
 p {
-    color: #ccc
+    color: #eee;
 }
 
 h3 {
@@ -25,13 +34,13 @@ h3 {
 }
 
 ::placeholder {
-    color: #aaa;
+    color: #eee;
     opacity: 1;
 }
 
 #main-bar {
     position: fixed;
-    height: 52px;
+    height: 40px;
     width: 100%;
     left: 0px;
     top: 0px;
@@ -42,39 +51,43 @@ h3 {
 }
 
 .main-button {
-    width: 32px;
-    
+    width: 28px;
 }
 
 .main-button:first-of-type {
     float: left;
-    padding: 10px 0px 10px 10px;
+    padding: 6px 0px 6px 10px;
 }
 
 .main-button:nth-of-type(2) {
     float: right;
-    padding: 10px 10px 10px 0px;
+    padding: 6px 10px 6px 0px;
 }
 
 #search-box {
     border: none;
     width: 220px;
-    padding: 7px 0px;
-    margin: 10px 0px 0px 0px;
-    background-color: #000;
-    border: 1px solid #222;
+    padding: 4px 0px 0px 0px;
+    margin: 10px 0px;
+    background-color: #111;
+    border-left: 2px solid #2a2a2a;
+    border-right: 2px solid #2a2a2a;
+    border-radius: 2px;
     color: #ccc;
-    border-radius: 20px;
     text-align: center;
     outline: none;
     font-size: 16px;
+    font-family: JosefinSlab;
 }
 
 .page {
     position: relative;
-    max-width: 1400px;
+    max-width: 1024px;
     width: 100%;
+    height: 100%;
     display: inline-flex;
+    padding: 40px 0px 0px 0px;
+    font-family: JosefinSlab;
 }
 
 #menu-bar {
@@ -88,11 +101,14 @@ h3 {
     transition: 0.3s;
     border-right: 1px solid #2a2a2a;
     text-align: left;
+    z-index: 9;
+    font-family: JosefinSlab-Italic;
+    font-weight: bold;
 }
 
 #menu-indicator {
     position: absolute;
-    top: 103px;
+    top: 90px;
     width: 5px;
     height: 27px;
     background-color: lightcoral;
@@ -111,7 +127,7 @@ h3 {
 }
 
 .menu-item:first-of-type {
-    margin-top: 54px;
+    margin-top: 41px;
 }
 
 .menu-item-header {
@@ -131,50 +147,54 @@ h3 {
     font-size: 14px;
 }
 
-.section {
-    display: grid;
+.section-box {
+    display: block;
     flex-wrap: wrap;
     justify-content: center;
-    border-radius: 4px;
     margin: 0px 0px;
 }
 
-.section-summary {
+.section {
     position: relative;
     text-align: left;
-    background-color: #111;
-    padding: 0px 20px;
-    margin: 10px;
-    border-radius: 14px;
+    padding: 4px 20px;
+    margin: 20px 0px;
     border: 1px solid #222;
+    border-radius: 4px;
+    background-color: #111;
+    box-shadow: rgba(0, 0, 0, 0.23) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-.section-summary-header {
+.section-header {
     position: relative;
     font-size: 18px;
+    font-weight: bold;
 }
 
-.section-summary-content {
+.section-content {
     position: relative;
     line-height: 20px;
     text-align: justify;
+    font-size: 17px;
+    font-weight:550;
 }
 
-.section-usecase {
+.section li {
     position: relative;
-    text-align: left;
-    background-color: #111;
-    padding: 0px 20px;
-    margin: 10px;
-    border-radius: 14px;
-    border: 1px solid #222;
+    list-style: none;
+    display: block;
 }
 
-.section-usecase-header {
-    font-size: 18px;
+.section img {
+    float: left;
+    position: relative;
+    width: 12px;
+    margin: 12px 10px 0px 0px;
 }
 
-.section-usecase-content p {
-    color: #ccc;
-    padding: 6px 0px;
+.section p {
+    display: inline-block;
+    padding: 0px 0px;
+    margin: 10px 0px;
+    
 }
