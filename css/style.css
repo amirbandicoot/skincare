@@ -19,22 +19,23 @@
 }
 
 body {
-    background-color: #191919;
+    background-color: #fff;
     text-align: center;
     padding: 0px 0px 0px 0px;
     margin: 0px;
+   
 }
 
 p {
-    color: #eee;
+    color: #000;
 }
 
 h3 {
-    color: #aaa;
+    color: #888;
 }
 
 ::placeholder {
-    color: #eee;
+    color: #333;
     opacity: 1;
 }
 
@@ -44,10 +45,11 @@ h3 {
     width: 100%;
     left: 0px;
     top: 0px;
-    background-color: #111;
+    background-color: #f2f2f2;
     text-align: center;
     z-index: 10;
-    border-bottom: 2px solid #222;
+    border-bottom: 2px solid #eee;
+    opacity: 0.8;
 }
 
 .main-button {
@@ -69,11 +71,11 @@ h3 {
     width: 220px;
     padding: 4px 0px 0px 0px;
     margin: 10px 0px;
-    background-color: #111;
-    border-left: 2px solid #2a2a2a;
-    border-right: 2px solid #2a2a2a;
+    background-color: #f2f2f2;
+    border-left: 2px solid #e6e6e6;
+    border-right: 2px solid #e6e6e6;
     border-radius: 2px;
-    color: #ccc;
+    color: #000;
     text-align: center;
     outline: none;
     font-size: 16px;
@@ -97,13 +99,15 @@ h3 {
     position: fixed;
     top: 0px;
     left: -200px;
-    background-color: #111;
+    background-color: #f2f2f2;
     transition: 0.3s;
-    border-right: 1px solid #2a2a2a;
+    border-right: 1px solid #e6e6e6;
     text-align: left;
     z-index: 9;
     font-family: JosefinSlab-Italic;
     font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    opacity: 0.8;
 }
 
 #menu-indicator {
@@ -121,7 +125,6 @@ h3 {
     margin: 0px 0px;
     padding: 0px;
     border-spacing: 0px;
-    background-color: #111;
     width: 200px;
     overflow: hidden;
 }
@@ -135,15 +138,14 @@ h3 {
     margin: 2px 0px 0px 0px;
     padding: 10px 10px;
     text-align: left;
-    border-bottom: 1px solid #222;
-    background-color: #0a0a0a;
+    border-bottom: 1px solid #eee;
 }
 
 .menu-item-content {
     display: grid;
     padding: 12px;
     margin: 2px 0px 0px 0px;
-    border-bottom: 1px solid #222;
+    border-bottom: 1px solid #e6e6e6;
     font-size: 14px;
 }
 
@@ -159,10 +161,11 @@ h3 {
     text-align: left;
     padding: 4px 20px;
     margin: 20px 0px;
-    border: 1px solid #222;
-    border-radius: 4px;
-    background-color: #111;
-    box-shadow: rgba(0, 0, 0, 0.23) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border: 1px solid #eee;
+    border-radius: 30px;
+    background-color: #f2f2f2;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    opacity: 0.8;
 }
 
 .section-header {
